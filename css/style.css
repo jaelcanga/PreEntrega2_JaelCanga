@@ -8,6 +8,9 @@
   font-family: ethnocentric, sans-serif;
   font-weight: 200;
   font-style: normal;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 .navbar {
@@ -116,12 +119,13 @@ div p {
 }
 
 .image_container {
-  display: flex;
-  justify-content: center;
-  column-gap: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  column-gap: 12px;
 }
 
-.image_container div img{
+.image_container div img {
   max-height: 450px;
   max-width: 450px;
 }
@@ -136,7 +140,23 @@ div p {
   max-width: 800px;
 }
 
-.zarina_store img{
+.zarina_store img {
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .image_container {
+    grid-template-columns: 1fr;
+  }
+  input{
+    display: none;
+  }
+  .img1{
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .search-icon{
+    display: none !important;
+  }
+}
