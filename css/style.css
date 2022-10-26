@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .title_home {
@@ -128,6 +129,7 @@ div p {
 .image_container div img {
   max-height: 450px;
   max-width: 450px;
+  width: 100%;
 }
 
 .description {
@@ -151,12 +153,26 @@ div p {
   input{
     display: none;
   }
-  .img1{
+  .map{
+    display: none;
+  }
+  .text{
+    padding: 24px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .search-icon{
     display: none !important;
+  }
+
+}
+
+@media screen and (max-width: 465px) {
+  .title_home{
+    font-size: 16px;
+  }
+  .icons span{
+    font-size: 20px;
   }
 }
