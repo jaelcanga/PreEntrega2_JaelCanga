@@ -12,24 +12,34 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="shurtcut icon" href="./images/icono.png">
     <title>zarina</title>
 </head>
 
 <body>
     <header class="navbar">
+        <div>
+            <p class="animate__animated animate__backInRight gif">Envíos a todo el país</p>
+        </div>
         <nav>
-            <ul>
-                <li><a href="./camperas.html">Camperas</a></li>
-                <li><a href="./jeans.html">Jeans</a></li>
-                <li><a href="./remeras.html">Remeras</a></li>
+            <input type='checkbox' name='menu' value='valuable' id="menu" />
+            <label for="menu">
+                <span class="material-symbols-outlined">
+                    menu
+                </span></label>
+            <ul class="sub-nav">
+                <li><a class="link_propio" href="./camperas.html">Camperas</a></li>
+                <li><a class="link_propio" href="./jeans.html">Jeans</a></li>
+                <li><a class="link_propio" href="./remeras.html">Remeras</a></li>
             </ul>
+            </input>
             <h1 class="title_home">zarina</h1>
             <div class="icons">
                 <span class="material-symbols-outlined search-icon">
                     search
                 </span>
-                <input placeholder="Buscar..." />
+                <input class="searcher" placeholder="Buscar..." />
                 <span class="material-symbols-outlined">
                     person
                 </span>
@@ -47,11 +57,11 @@
         <section>
             <img class="img1" src="./images/home/home1.png" alt="jeans">
         </section>
-        <div>
-            <p class="gif">Envíos a todo el país</p>
-        </div>
         <section>
-            <img class="img2" src="./images/home/home2.webp" alt="mujer moda">
+            <p class="quota">Hasta 3 cuotas sin interés</p>
+        </section>
+        <section>
+            <img class="img16" src="./images/home/home16.jpg" alt="mujer moda">
         </section>
         <section>
             <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis sequi culpa officia animi
