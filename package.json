@@ -1,4 +1,10 @@
 {
+  "name": "zarina-web",
+  "version": "1.0.0",
+  "author": "jael <jaelcanga@gmail.com>"
+}
+
+{
   "dependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"
