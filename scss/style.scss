@@ -4,26 +4,37 @@
     box-sizing: border-box;
 }
 
+$color-white: white;
+$color-darkgray: #494949;
+@mixin zarinalogo {
+    color: $color-darkgray;
+    font-family: ethnocentric, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    
+}
+
+body {
+    background-color: $color-white;
+}
+
 .gif {
-    background-color: #494949;
+    background-color: $color-darkgray;
     margin: 0;
-    color: white;
+    color: $color-white;
     font-size: 13px;
     padding: 5px;
 }
 
 .title_home {
-    color: #494949;
-    font-family: ethnocentric, sans-serif;
-    font-weight: 200;
-    font-style: normal;
+    @include zarinalogo;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
 }
 
 .navbar {
-    background-color: white;
+    background-color: $color-white;
     position: fixed;
     top: 0;
     width: 100%;
@@ -36,7 +47,7 @@
 }
 
 .navbar a {
-    color: #494949;
+    color: $color-darkgray;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif
 }
@@ -73,7 +84,7 @@ input[type=checkbox]:checked~.sub-nav {
     left: 0;
     z-index: 99999;
     width: 100%;
-    background-color: white;
+    background-color: $color-white;
 }
 
 ul li {
@@ -81,7 +92,7 @@ ul li {
 }
 
 .about_us {
-    color: #494949;
+    color: $color-darkgray;
     font-family: montserrat, sans-serif;
     font-weight: 400;
     font-style: italic;
@@ -97,13 +108,13 @@ ul li {
 
 
         .banner {
-            color: white;
-            background-color: #494949;
+            color: $color-white;
+            background-color: $color-darkgray;
             padding: 5px;
         }
 
 
-        .img16 {
+        .img2 {
             width: 100%;
         }
 
@@ -119,159 +130,159 @@ ul li {
 }
 
 
-    p {
-        font-family: montserrat, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        text-align: center;
+p {
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+footer {
+    text-decoration: none;
+    color: $color-darkgray;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F4F5F6;
+    height: 120px
+}
+
+footer ul li {
+    margin: 6px 10px;
+}
+
+.social_media {
+    display: flex;
+    justify-content: center;
+}
+
+.social_media a {
+    text-decoration: none;
+    color: black;
+    margin: 70px 20px;
+}
+
+.map {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.content {
+    margin-top: 75px;
+    padding: 24px 0;
+}
+
+h2 {
+    text-align: center;
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+div p {
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.image_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    column-gap: 12px;
+}
+
+.image_container div img {
+    max-height: 450px;
+    max-width: 450px;
+    width: 100%;
+}
+
+.description {
+    margin: 40px;
+    padding: 20px;
+}
+
+.zarina_store {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.zarina_store img {
+    width: 100%;
+}
+
+.link_propio:hover {
+    color: gray;
+}
+
+@media screen and (max-width: 768px) {
+    .image_container {
+        grid-template-columns: 1fr;
     }
 
-    footer {
-        text-decoration: none;
-        color: #494949;
-        font-family: montserrat, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        display: flex;
-        justify-content: space-between;
-        background-color: #F4F5F6;
-        height: 120px
-    }
-
-    footer ul li {
-        margin: 6px 10px;
-    }
-
-    .social_media {
-        display: flex;
-        justify-content: center;
-    }
-
-    .social_media a {
-        text-decoration: none;
-        color: black;
-        margin: 70px 20px;
+    input {
+        display: none;
     }
 
     .map {
-        margin-right: 10px;
-        margin-top: 10px;
+        display: none;
     }
 
-    .content {
-        margin-top: 75px;
-        padding: 24px 0;
+    .text {
+        padding: 24px;
     }
 
-    h2 {
-        text-align: center;
-        font-family: montserrat, sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        margin-top: 20px;
-        margin-bottom: 50px;
+    .map_mobile {
+        display: block;
+        margin: 0 auto;
     }
 
-    div p {
-        margin-bottom: 100px;
-        margin-top: 20px;
+    .icons {
+        margin: 0%;
     }
 
-    .image_container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        column-gap: 12px;
+    input[type=checkbox]:checked~.sub-nav {
+        top: 52px;
     }
 
-    .image_container div img {
-        max-height: 450px;
-        max-width: 450px;
-        width: 100%;
-    }
-
-    .description {
-        margin: 40px;
-        padding: 20px;
+    .img1 {
+        margin-top: 52px;
     }
 
     .zarina_store {
         margin: 0 auto;
-        max-width: 800px;
+        max-width: 500px;
     }
 
     .zarina_store img {
         width: 100%;
     }
 
-    .link_propio:hover {
-        color: gray;
+
+}
+
+@media screen and (min-width: 768px) {
+    .search-icon {
+        display: none !important;
     }
 
-    @media screen and (max-width: 768px) {
-        .image_container {
-            grid-template-columns: 1fr;
-        }
-
-        input {
-            display: none;
-        }
-
-        .map {
-            display: none;
-        }
-
-        .text {
-            padding: 24px;
-        }
-
-        .map_mobile {
-            display: block;
-            margin: 0 auto;
-        }
-
-        .icons {
-            margin: 0%;
-        }
-
-        input[type=checkbox]:checked~.sub-nav {
-            top: 52px;
-        }
-
-        .img1 {
-            margin-top: 52px;
-        }
-
-        .zarina_store {
-            margin: 0 auto;
-            max-width: 500px;
-        }
-
-        .zarina_store img {
-            width: 100%;
-        }
-
-
+    .map_mobile {
+        display: none;
     }
 
-    @media screen and (min-width: 768px) {
-        .search-icon {
-            display: none !important;
-        }
+}
 
-        .map_mobile {
-            display: none;
-        }
-
+@media screen and (max-width: 465px) {
+    .title_home {
+        font-size: 16px;
     }
 
-    @media screen and (max-width: 465px) {
-        .title_home {
-            font-size: 16px;
-        }
+    .icons span {
+        font-size: 20px;
+    }
 
-        .icons span {
-            font-size: 20px;
-        }
-
-    }    
+}

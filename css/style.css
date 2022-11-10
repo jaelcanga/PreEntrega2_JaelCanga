@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: white;
+}
+
 .gif {
   background-color: #494949;
   margin: 0;
@@ -96,7 +100,7 @@ ul li {
   background-color: #494949;
   padding: 5px;
 }
-.contents section .img16 {
+.contents section .img2 {
   width: 100%;
 }
 .contents section .text {
