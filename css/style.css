@@ -181,7 +181,8 @@ div p {
 
 .description {
   margin: 40px;
-  padding: 20px;
+  padding-left: 210px;
+  padding-right: 210px;
 }
 
 .zarina_store {
@@ -190,6 +191,15 @@ div p {
 }
 
 .zarina_store img {
+  width: 100%;
+}
+
+.mockup{
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.mockup img{
   width: 100%;
 }
 
@@ -209,6 +219,10 @@ div p {
   }
   .text {
     padding: 24px;
+  }
+  .description{
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .map_mobile {
     display: block;
@@ -230,6 +244,9 @@ div p {
   .zarina_store img {
     width: 100%;
   }
+  .mockup{
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .search-icon {
@@ -239,6 +256,14 @@ div p {
     display: none;
   }
 }
+
+@media  screen and (min-width: 768px) and (max-width: 1020px) {
+  .description{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 @media screen and (max-width: 465px) {
   .title_home {
     font-size: 16px;
