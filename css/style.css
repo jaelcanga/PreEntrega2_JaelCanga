@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+.container-div {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
 body {
   background-color: white;
 }
@@ -51,7 +58,10 @@ body {
 }
 
 .icons {
+  display: flex;
+  align-items: center;
   margin: 20px;
+  gap: 5px;
 }
 
 input[type=checkbox] {
@@ -100,6 +110,7 @@ ul li {
   color: white;
   background-color: #494949;
   padding: 5px;
+  margin: 0px;
 }
 
 .contents section .img2 {
@@ -229,15 +240,32 @@ div p {
   width: 20rem;
 }
 
-.ultimo-form {
+.textarea-contacto {
+  width: 20rem;
   height: 10rem;
+  resize: none;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #494949;
+}
+
+.textarea-contacto::placeholder {
+  color: #757575;
+  font-size: 15px;
+  font-family: montserrat, sans-serif;
 }
 
 .btn-submit {
-  width: 10%;
+  width: 10rem;
   height: 50px;
   background: transparent;
   border: 1px solid black;
+}
+
+.btn-submit:hover {
+  transform: scale(1.1);
+  background-color: #494949;
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -245,7 +273,7 @@ div p {
     grid-template-columns: 1fr;
   }
 
-  input {
+  .searcher {
     display: none;
   }
 
@@ -317,6 +345,16 @@ div p {
 
   .icons span {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .form-contacto {
+    width: 15rem;
+  }
+
+  .textarea-contacto {
+    width: 15rem;
   }
 }
 
