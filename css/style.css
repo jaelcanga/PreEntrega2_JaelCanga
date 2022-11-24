@@ -70,7 +70,7 @@ input[type=checkbox]:checked {
   display: none;
 }
 
-input[type=checkbox]:checked ~ .sub-nav {
+input[type=checkbox]:checked~.sub-nav {
   display: block;
   position: absolute;
   top: 100px;
@@ -95,14 +95,17 @@ ul li {
   width: 100%;
   margin-top: 80px;
 }
+
 .contents section .banner {
   color: white;
   background-color: #494949;
   padding: 5px;
 }
+
 .contents section .img2 {
   width: 100%;
 }
+
 .contents section .text {
   margin: 20px;
   padding: 100px;
@@ -145,6 +148,8 @@ footer ul li {
 .map {
   margin-right: 10px;
   margin-top: 10px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .content {
@@ -194,12 +199,12 @@ div p {
   width: 100%;
 }
 
-.mockup{
+.mockup {
   margin: 0 auto;
   max-width: 800px;
 }
 
-.mockup img{
+.mockup img {
   width: 100%;
 }
 
@@ -207,58 +212,99 @@ div p {
   color: gray;
 }
 
+.main-contacto {
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.form-contacto {
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #494949;
+  padding: 0.5rem 0;
+  width: 20rem;
+}
+
+.ultimo-form {
+  height: 10rem;
+}
+
+.btn-submit {
+  width: 10%;
+  height: 50px;
+  background: transparent;
+  border: 1px solid black;
+}
+
 @media screen and (max-width: 768px) {
   .image_container {
     grid-template-columns: 1fr;
   }
+
   input {
     display: none;
   }
+
   .map {
     display: none;
   }
+
   .text {
     padding: 24px;
   }
-  .description{
+
+  .description {
     padding-left: 30px;
     padding-right: 30px;
   }
+
   .map_mobile {
     display: block;
     margin: 0 auto;
   }
+
   .icons {
     margin: 0%;
   }
-  input[type=checkbox]:checked ~ .sub-nav {
+
+  input[type=checkbox]:checked~.sub-nav {
     top: 52px;
   }
+
   .img1 {
     margin-top: 52px;
   }
+
   .zarina_store {
     margin: 0 auto;
     max-width: 500px;
   }
+
   .zarina_store img {
     width: 100%;
   }
-  .mockup{
+
+  .mockup {
     display: none;
   }
 }
+
 @media screen and (min-width: 768px) {
   .search-icon {
     display: none !important;
   }
+
   .map_mobile {
     display: none;
   }
 }
 
-@media  screen and (min-width: 768px) and (max-width: 1020px) {
-  .description{
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .description {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -268,6 +314,7 @@ div p {
   .title_home {
     font-size: 16px;
   }
+
   .icons span {
     font-size: 20px;
   }
