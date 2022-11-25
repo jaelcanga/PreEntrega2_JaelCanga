@@ -10,9 +10,11 @@
   height: 100vh;
   justify-content: space-between;
 }
-.material-symbols-outlined{
+
+.material-symbols-outlined {
   cursor: pointer;
 }
+
 body {
   background-color: white;
 }
@@ -105,7 +107,7 @@ ul li {
 
 .contents section .img1 {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 54px;
 }
 
 .contents section .banner {
@@ -270,6 +272,13 @@ div p {
   color: white;
 }
 
+.img-contacto {
+  max-height: 450px;
+  max-width: 450px;
+  width: 100%;
+  margin-top: 30px;
+}
+
 @media screen and (max-width: 768px) {
   .image_container {
     grid-template-columns: 1fr;
@@ -305,10 +314,6 @@ div p {
     top: 52px;
   }
 
-  .img1 {
-    margin-top: 52px;
-  }
-
   .zarina_store {
     margin: 0 auto;
     max-width: 500px;
@@ -331,6 +336,9 @@ div p {
   .map_mobile {
     display: none;
   }
+  .img1 {
+    margin-top: 105px !important;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1020px) {
@@ -348,6 +356,7 @@ div p {
   .icons span {
     font-size: 20px;
   }
+
 }
 
 @media (max-width: 320px) {
